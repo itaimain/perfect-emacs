@@ -11,6 +11,7 @@
   '(ido-vertical-mode
     ggtags
     magit
+    ace-jump-mode
     ))
 (load (expand-file-name "~/.emacs.d/download-packages"))
 (download-packages-download packages-list)
