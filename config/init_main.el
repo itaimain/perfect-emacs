@@ -1,3 +1,5 @@
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;; Graphic configurations
 (defun fullscreen ()
   (interactive)
