@@ -21,6 +21,8 @@
     diff-hl
     async
     helm
+    popup
+    auto-complete
     ))
 (load (expand-file-name "~/.emacs.d/download-packages"))
 (download-packages-download packages-list)
