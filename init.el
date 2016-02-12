@@ -12,6 +12,7 @@
     ggtags
     magit
     ace-jump-mode
+    smooth-scrolling
     ))
 (load (expand-file-name "~/.emacs.d/download-packages"))
 (download-packages-download packages-list)
