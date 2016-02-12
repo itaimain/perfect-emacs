@@ -36,6 +36,7 @@
     pkg-info
     flycheck
     whitespace-cleanup-mode
+    makefile-runner
     ))
 
 (load (expand-file-name "~/.emacs.d/download-packages"))
