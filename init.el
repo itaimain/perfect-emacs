@@ -19,6 +19,8 @@
     swiper
     volatile-highlights
     diff-hl
+    async
+    helm
     ))
 (load (expand-file-name "~/.emacs.d/download-packages"))
 (download-packages-download packages-list)
