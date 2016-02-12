@@ -55,3 +55,5 @@
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 (require 'makefile-runner)
 (global-set-key (kbd "<f5>") 'makefile-runner)
+
+(setq compilation-scroll-output t)
