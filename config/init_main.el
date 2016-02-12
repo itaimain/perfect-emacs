@@ -1,5 +1,7 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/config/mini"))
 
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
 ;; Graphic configurations
 (defun fullscreen ()
   (interactive)
@@ -34,4 +36,7 @@
 
 (global-set-key (kbd "<scroll_Lock>") 'scroll-lock-mode)
 
+
 (load "conf_hl-line")
+(require 'server)
+(unless (server-running-p) (server-start))

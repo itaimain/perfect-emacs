@@ -14,6 +14,7 @@
     ace-jump-mode
     smooth-scrolling
     idle-highlight-mode
+    function-args
     ))
 (load (expand-file-name "~/.emacs.d/download-packages"))
 (download-packages-download packages-list)
