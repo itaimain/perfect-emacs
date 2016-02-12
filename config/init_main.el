@@ -26,3 +26,5 @@
 (setq ido-everywhere t)
 (setq ido-vertical-define-keys 'C-n-and-C-p-only)
 (setq ido-vertical-show-count t)
+
+(winner-mode 1)
