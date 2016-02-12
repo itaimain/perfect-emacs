@@ -1,3 +1,5 @@
+(setq server-use-tcp t)
+
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 (setq c-basic-offset 4)
