@@ -39,6 +39,7 @@
     makefile-runner
     auto-package-update
     expand-region
+    undo-tree
     yasnippet
     ))
 

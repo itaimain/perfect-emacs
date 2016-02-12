@@ -60,3 +60,5 @@
 (setq compilation-scroll-output t)
 
 (yas-global-mode)
+(require 'undo-tree)
+(global-undo-tree-mode)
