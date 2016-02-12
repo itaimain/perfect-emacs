@@ -37,6 +37,7 @@
 
 
 (load "conf_hl-line")
+(load "conf_auto-package-update")
 
 (require 'server)
 (setq server-use-tcp t)
