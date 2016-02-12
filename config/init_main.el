@@ -32,4 +32,6 @@
 (winner-mode 1)
 (add-hook 'prog-mode-hook 'idle-highlight-mode)
 
+(global-set-key (kbd "<scroll_Lock>") 'scroll-lock-mode)
+
 (load "conf_hl-line")
