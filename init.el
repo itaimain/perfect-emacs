@@ -39,6 +39,7 @@
     makefile-runner
     auto-package-update
     expand-region
+    yasnippet
     ))
 
 (load (expand-file-name "~/.emacs.d/download-packages"))

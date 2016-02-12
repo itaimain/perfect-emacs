@@ -58,3 +58,5 @@
 (global-set-key (kbd "<f5>") 'makefile-runner)
 
 (setq compilation-scroll-output t)
+
+(yas-global-mode)
