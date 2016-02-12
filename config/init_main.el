@@ -1,10 +1,3 @@
-(setq server-use-tcp t)
-
-(defalias 'yes-or-no-p 'y-or-n-p)
-
-(setq c-basic-offset 4)
-(setq c-default-style "linux" c-basic-offset 4)
-
 ;; Graphic configurations
 (defun fullscreen ()
   (interactive)
@@ -17,3 +10,19 @@
 (tool-bar-mode -1)
 (toggle-scroll-bar -1)
 (menu-bar-mode -1)
+
+;; ---------------------------
+(setq server-use-tcp t)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+(setq c-basic-offset 4)
+(setq c-default-style "linux" c-basic-offset 4)
+
+(require 'ido-vertical-mode)
+(ido-mode 1)
+(ido-vertical-mode 1)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(setq ido-vertical-define-keys 'C-n-and-C-p-only)
+(setq ido-vertical-show-count t)

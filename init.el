@@ -7,6 +7,12 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
+(defvar packages-list
+  '(ido-vertical-mode
+    ))
+(load (expand-file-name "~/.emacs.d/download-packages"))
+(download-packages-download packages-list)
+
 ;;Load all the modes configuration files
 (defun load-directory (directory)
   "Load recursively all '.el' files in DIRECTORY."
