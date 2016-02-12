@@ -35,6 +35,7 @@
     let-alist
     pkg-info
     flycheck
+    whitespace-cleanup-mode
     ))
 
 (load (expand-file-name "~/.emacs.d/download-packages"))

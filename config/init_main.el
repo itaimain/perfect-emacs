@@ -51,3 +51,5 @@
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 (global-linum-mode 1)
+(global-whitespace-cleanup-mode t)
+(global-set-key (kbd "C-c w") 'whitespace-mode)
