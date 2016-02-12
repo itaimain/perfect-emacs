@@ -18,6 +18,7 @@
     sudo-ext
     swiper
     volatile-highlights
+    diff-hl
     ))
 (load (expand-file-name "~/.emacs.d/download-packages"))
 (download-packages-download packages-list)

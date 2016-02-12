@@ -44,3 +44,5 @@
 
 (require 'volatile-highlights)
 (volatile-highlights-mode t)
+
+(global-diff-hl-mode)
