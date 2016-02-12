@@ -9,6 +9,7 @@
 
 (defvar packages-list
   '(ido-vertical-mode
+    ggtags
     ))
 (load (expand-file-name "~/.emacs.d/download-packages"))
 (download-packages-download packages-list)
