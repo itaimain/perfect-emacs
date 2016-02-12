@@ -28,6 +28,7 @@
 
 (defvar packages-list-2
   '(ac-slime
+    comment-dwim-2
     ))
 
 (load (expand-file-name "~/.emacs.d/download-packages"))
