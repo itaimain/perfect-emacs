@@ -13,6 +13,7 @@
     magit
     ace-jump-mode
     smooth-scrolling
+    idle-highlight-mode
     ))
 (load (expand-file-name "~/.emacs.d/download-packages"))
 (download-packages-download packages-list)

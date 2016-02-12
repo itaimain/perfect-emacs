@@ -28,3 +28,4 @@
 (setq ido-vertical-show-count t)
 
 (winner-mode 1)
+(add-hook 'prog-mode-hook 'idle-highlight-mode)
