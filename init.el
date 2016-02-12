@@ -30,6 +30,11 @@
   '(ac-slime
     comment-dwim-2
     drag-stuff
+    epl
+    dash
+    let-alist
+    pkg-info
+    flycheck
     ))
 
 (load (expand-file-name "~/.emacs.d/download-packages"))
