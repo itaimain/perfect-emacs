@@ -41,3 +41,6 @@
 (setq server-use-tcp t)
 
 (require 'sudo-ext)
+
+(require 'volatile-highlights)
+(volatile-highlights-mode t)
