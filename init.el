@@ -7,7 +7,7 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
-(defvar packages-list
+(defvar packages-list-1
   '(ido-vertical-mode
     ggtags
     magit
@@ -23,9 +23,17 @@
     helm
     popup
     auto-complete
+    slime				; must be the last one of this list(should have a delay after)
     ))
+
+(defvar packages-list-2
+  '(ac-slime
+    ))
+
 (load (expand-file-name "~/.emacs.d/download-packages"))
-(download-packages-download packages-list)
+(download-packages-download packages-list-1)
+(sleep-for 1)
+(download-packages-download packages-list-2)
 
 ;;Load all the modes configuration files
 (defun load-directory (directory)
