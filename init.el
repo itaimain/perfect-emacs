@@ -15,6 +15,7 @@
     smooth-scrolling
     idle-highlight-mode
     function-args
+    sudo-ext
     ))
 (load (expand-file-name "~/.emacs.d/download-packages"))
 (download-packages-download packages-list)

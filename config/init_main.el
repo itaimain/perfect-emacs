@@ -40,3 +40,5 @@
 (load "conf_hl-line")
 (require 'server)
 (unless (server-running-p) (server-start))
+
+(require 'sudo-ext)
