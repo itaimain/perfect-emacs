@@ -1,3 +1,5 @@
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/config/mini"))
+
 ;; Graphic configurations
 (defun fullscreen ()
   (interactive)
@@ -29,3 +31,5 @@
 
 (winner-mode 1)
 (add-hook 'prog-mode-hook 'idle-highlight-mode)
+
+(load "conf_hl-line")
