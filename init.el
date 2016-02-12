@@ -38,6 +38,7 @@
     whitespace-cleanup-mode
     makefile-runner
     auto-package-update
+    expand-region
     ))
 
 (load (expand-file-name "~/.emacs.d/download-packages"))
