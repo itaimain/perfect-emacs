@@ -49,3 +49,5 @@
 (global-diff-hl-mode)
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+(global-linum-mode 1)
