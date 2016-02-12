@@ -16,7 +16,6 @@
 (menu-bar-mode -1)
 
 ;; ---------------------------
-(setq server-use-tcp t)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -39,6 +38,6 @@
 
 (load "conf_hl-line")
 (require 'server)
-(unless (server-running-p) (server-start))
+(setq server-use-tcp t)
 
 (require 'sudo-ext)
