@@ -41,6 +41,7 @@
     expand-region
     undo-tree
     sudo-edit
+    autopair
     yasnippet
     ))
 

@@ -63,3 +63,6 @@
 (require 'undo-tree)
 (global-undo-tree-mode)
 (require 'sudo-edit)
+
+(require 'autopair)
+(autopair-global-mode)
