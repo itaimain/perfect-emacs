@@ -62,3 +62,4 @@
 (yas-global-mode)
 (require 'undo-tree)
 (global-undo-tree-mode)
+(require 'sudo-edit)

@@ -40,6 +40,7 @@
     auto-package-update
     expand-region
     undo-tree
+    sudo-edit
     yasnippet
     ))
 
