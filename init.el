@@ -42,6 +42,7 @@
     undo-tree
     sudo-edit
     autopair
+    corral
     yasnippet
     ))
 
