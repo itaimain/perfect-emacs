@@ -1,5 +1,8 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(setq c-basic-offset 4)
+(setq c-default-style "linux" c-basic-offset 4)
+
 ;; Graphic configurations
 (defun fullscreen ()
   (interactive)
