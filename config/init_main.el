@@ -68,3 +68,6 @@
 (autopair-global-mode)
 
 (global-set-key (kbd "C-x g t") 'git-timemachine)
+
+(require 'smartparens-config)
+(show-smartparens-global-mode 1)

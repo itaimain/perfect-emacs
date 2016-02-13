@@ -46,6 +46,7 @@
     eno
     git-timemachine
     iedit
+    smartparens
     yasnippet
     ))
 
