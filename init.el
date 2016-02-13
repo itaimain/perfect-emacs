@@ -45,6 +45,7 @@
     corral
     edit-at-point
     bind-key
+    eno
     yasnippet
     ))
 
