@@ -43,6 +43,8 @@
     sudo-edit
     autopair
     corral
+    edit-at-point
+    bind-key
     yasnippet
     ))
 
