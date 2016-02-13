@@ -47,6 +47,7 @@
     git-timemachine
     iedit
     smartparens
+    string-edit
     yasnippet
     ))
 

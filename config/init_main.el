@@ -71,3 +71,5 @@
 
 (require 'smartparens-config)
 (show-smartparens-global-mode 1)
+
+(global-set-key (kbd "C-c s e") 'string-edit-at-point)
