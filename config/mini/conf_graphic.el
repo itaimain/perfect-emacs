@@ -3,7 +3,7 @@
 ;;; Sets the graphical configurations.
 
 ;;; Code:
-(eval-when-compile (defvar graphic-preferences))
+(require 'preferences)
 
 (defmacro get-graphic-val (key)
   "Get the value of the KEY in the graphic-preferences association list."

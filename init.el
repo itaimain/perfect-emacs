@@ -5,20 +5,8 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
-;; Preferences:
-(defvar graphic-preferences)
-(setq graphic-preferences '(
-			    (theme . 'wombat)
-			    (region-background-color . "#555")
-			    (region-foreground-color . 'unspecified)
-			    (tool-bar . -1)
-			    (scroll-bar . -1)
-			    (menu-bar . -1)
-			    (blink-cursor . 1)
-			    (font-type . "monaco")
-			    (font-size . 15)
-			    (which-function . 1)
-			    ))
+(load (expand-file-name "~/.emacs.d/download-packages"))
+(load (expand-file-name "~/.emacs.d/preferences"))
 
 (defvar packages-list-1
   '(ido-vertical-mode
@@ -67,7 +55,6 @@
     yasnippet
     ))
 
-(load (expand-file-name "~/.emacs.d/download-packages"))
 (download-packages-download packages-list-1)
 (sleep-for 1)
 (download-packages-download packages-list-2)
