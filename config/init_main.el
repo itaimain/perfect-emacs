@@ -64,3 +64,12 @@
 
 (global-set-key (kbd "C-c s e") 'string-edit-at-point)
 (global-aggressive-indent-mode 1)
+
+;; ========= Place backup files in specific directory =========
+(setq make-backup-files t		; Don't clobber symlinks
+      backup-by-copying t
+      backup-directory-alist '(("." . "~/.emacs_backups")) ; Don't litter my fs tree
+      delete-old-versions t
+      kept-new-versions 6
+      kept-old-versions 2
+      version-control t)		; Use versioned backup
