@@ -3,18 +3,16 @@
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
 ;; Graphic configurations
-(defun fullscreen ()
-  (interactive)
-  (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
-			 '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
-(fullscreen)
+(add-to-list 'default-frame-alist '(fullscreen . fullboth))
 (setq inhibit-startup-message t)
+(setq inhibit-x-resources 't)
 (load-theme 'wombat)
 (set-face-attribute 'region nil :background "#555" :foreground 'unspecified)
 (which-function-mode 1)
 (tool-bar-mode -1)
-(toggle-scroll-bar -1)
+(scroll-bar-mode -1)
 (menu-bar-mode -1)
+(blink-cursor-mode 1)
 
 ;; ---------------------------
 
@@ -53,6 +51,7 @@
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 (global-linum-mode 1)
+(column-number-mode 1)
 (global-whitespace-cleanup-mode t)
 (global-set-key (kbd "C-c w") 'whitespace-mode)
 (require 'makefile-runner)
