@@ -46,6 +46,7 @@
     edit-at-point
     bind-key
     eno
+    git-timemachine
     yasnippet
     ))
 

@@ -67,3 +67,5 @@
 
 (require 'autopair)
 (autopair-global-mode)
+
+(global-set-key (kbd "C-x g t") 'git-timemachine)
