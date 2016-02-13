@@ -4,6 +4,7 @@
 
 ;;; Code:
 (require 'preferences)
+(require 'startup-log)
 
 (defun graphic-font-exist-p (font-name)
   "Test if the font FONT-NAME exists."
@@ -15,7 +16,10 @@
 (defun graphic-set-font (font-name font-size)
   "Setup Emacs English FONT-NAME and FONT=SIZE on x-window-system."
   (if (graphic-font-exist-p font-name)
-      (set-frame-font (format "%s:pixelsize=%d" font-name font-size) t)))
+      (set-frame-font (format "%s:pixelsize=%d" font-name font-size) t)
+    (startup-log-add
+     (format "The requested font (%s) counldn't be found on you system."
+	     font-name))))
 
 (add-to-list 'default-frame-alist '(fullscreen . fullboth))
 (setq inhibit-startup-message t)

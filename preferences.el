@@ -6,6 +6,10 @@
 ;;; Code:
 (require 'preferences-declerations)
 
+(setq startup-preferences '(
+			    (startup-log . t)
+			    ))
+
 (setq graphic-preferences '(
 			    (theme . 'wombat)
 			    (region-background-color . "#555")

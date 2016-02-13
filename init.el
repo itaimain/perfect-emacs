@@ -32,5 +32,9 @@
 
 (load-directory "~/.emacs.d/config")
 
+(require 'preferences)
+(require 'startup-log)
+(startup-log-show)
+
 (provide 'init)
 ;;; init.el ends here
