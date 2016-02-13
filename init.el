@@ -5,6 +5,21 @@
 	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
+;; Preferences:
+(defvar graphic-preferences)
+(setq graphic-preferences '(
+			    (theme . 'wombat)
+			    (region-background-color . "#555")
+			    (region-foreground-color . 'unspecified)
+			    (tool-bar . -1)
+			    (scroll-bar . -1)
+			    (menu-bar . -1)
+			    (blink-cursor . 1)
+			    (font-type . "monaco")
+			    (font-size . 15)
+			    (which-function . 1)
+			    ))
+
 (defvar packages-list-1
   '(ido-vertical-mode
     ggtags

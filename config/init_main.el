@@ -3,18 +3,7 @@
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
 ;; Graphic configurations
-(add-to-list 'default-frame-alist '(fullscreen . fullboth))
-(setq inhibit-startup-message t)
-(setq inhibit-x-resources 't)
-(load-theme 'wombat)
-(set-face-attribute 'region nil :background "#555" :foreground 'unspecified)
-(set-frame-font "Monaco:pixelsize=15")
-(which-function-mode 1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(menu-bar-mode -1)
-(blink-cursor-mode 1)
-
+(load "conf_graphic")
 ;; ---------------------------
 
 (defalias 'yes-or-no-p 'y-or-n-p)
