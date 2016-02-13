@@ -8,6 +8,7 @@
 (setq inhibit-x-resources 't)
 (load-theme 'wombat)
 (set-face-attribute 'region nil :background "#555" :foreground 'unspecified)
+(set-frame-font "Monaco:pixelsize=15")
 (which-function-mode 1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
