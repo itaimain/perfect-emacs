@@ -45,6 +45,7 @@
     bind-key
     eno
     git-timemachine
+    iedit
     yasnippet
     ))
 
