@@ -1,10 +1,13 @@
+;;; init_main --- Main Emacs initializations
+;;;
+;;; Commentary:
+;;; Init global configurations.
+
+;;; Code:
+
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/config/mini"))
 
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-
-;; Graphic configurations
-(load "conf_graphic")
-;; ---------------------------
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -73,3 +76,6 @@
       kept-new-versions 6
       kept-old-versions 2
       version-control t)		; Use versioned backup
+
+(provide 'init_main)
+;;; init_main.el ends here

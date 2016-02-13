@@ -5,10 +5,6 @@
 ;;; Code:
 (require 'preferences)
 
-(defmacro get-graphic-val (key)
-  "Get the value of the KEY in the graphic-preferences association list."
-  (cdr (assoc key graphic-preferences)))
-
 (defun graphic-font-exist-p (font-name)
   "Test if the font FONT-NAME exists."
   (if (or (not font-name) (string= font-name ""))

@@ -1,3 +1,8 @@
+;;; packages-download-utils --- download packages
+;;; Commentary:
+;;; Download all packages of a list.
+
+;;; Code:
 (require 'cl)
 
 (setq packages-content-refreshed nil)
@@ -11,9 +16,10 @@
   (packages-content-refresh-if-needed)
   (package-install package))
 
-(defun download-packages-download (packages)
+(defun packages-download-list (packages)
   (loop for p in packages
 	unless (package-installed-p p)
 	do (download-one-package p)))
 
-(provide 'download-packages)
+(provide 'packages-download-utils)
+;;; packages-download-utils.el ends here

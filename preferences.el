@@ -4,7 +4,7 @@
 ;;; Sets the configurable preferences.
 
 ;;; Code:
-(defvar graphic-preferences)
+(require 'preferences-declerations)
 
 (setq graphic-preferences '(
 			    (theme . 'wombat)
