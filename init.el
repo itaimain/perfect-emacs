@@ -48,6 +48,7 @@
     iedit
     smartparens
     string-edit
+    aggressive-indent
     yasnippet
     ))
 
