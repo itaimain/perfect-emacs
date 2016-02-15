@@ -16,5 +16,5 @@
   "Get the value of the KEY in the startup-preferences association list."
   (cdr (assoc key startup-preferences)))
 
-(provide 'preferences-declerations)
-;;; preferences-declerations.el ends here
+(provide 'preferences-declarations)
+;;; preferences-declarations.el ends here
