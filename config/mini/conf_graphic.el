@@ -1,4 +1,4 @@
-;;; package --- conf_graphic
+;;; conf_graphic --- Graphical configurations
 ;;; Commentary:
 ;;; Sets the graphical configurations.
 
@@ -14,7 +14,7 @@
 	nil t)))
 
 (defun graphic-set-font (font-name font-size)
-  "Setup Emacs English FONT-NAME and FONT=SIZE on x-window-system."
+  "Setup Emacs English FONT-NAME and FONT-SIZE on x-window-system."
   (if (graphic-font-exist-p font-name)
       (set-frame-font (format "%s:pixelsize=%d" font-name font-size) t)
     (startup-log-add
@@ -40,3 +40,6 @@
 	  (add-to-list 'default-frame-alist '(fullscreen . fullboth)))
       (graphic-set-font (get-graphic-val font-type)
 			(get-graphic-val font-size))))
+
+(provide 'conf_graphic)
+;;; conf_graphic.el ends here
