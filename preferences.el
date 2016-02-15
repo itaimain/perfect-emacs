@@ -21,6 +21,7 @@
 			    (font-type . "monaco")
 			    (font-size . 15)
 			    (which-function . 1)
+			    (full-screen . t)
 			    ))
 
 (provide 'preferences)

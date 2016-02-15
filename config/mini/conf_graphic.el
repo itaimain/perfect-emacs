@@ -21,7 +21,6 @@
      (format "The requested font (%s) counldn't be found on you system."
 	     font-name))))
 
-(add-to-list 'default-frame-alist '(fullscreen . fullboth))
 (setq inhibit-startup-message t)
 (setq inhibit-x-resources 't)
 
@@ -33,6 +32,11 @@
 (tool-bar-mode (get-graphic-val tool-bar))
 (scroll-bar-mode (get-graphic-val scroll-bar))
 (blink-cursor-mode (get-graphic-val blink-cursor))
-(graphic-set-font (get-graphic-val font-type)
-		  (get-graphic-val font-size))
 (which-function-mode (get-graphic-val which-function))
+
+(if (display-graphic-p)			; Check if using graphic window
+    (progn
+      (if (get-graphic-val full-screen)
+	  (add-to-list 'default-frame-alist '(fullscreen . fullboth)))
+      (graphic-set-font (get-graphic-val font-type)
+			(get-graphic-val font-size))))
