@@ -4,7 +4,7 @@
 ;;; Sets the configurable preferences.
 
 ;;; Code:
-(require 'preferences-declarationso)
+(require 'preferences-declarations)
 
 (setq startup-preferences '(
 			    (startup-log . t)
