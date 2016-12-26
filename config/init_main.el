@@ -67,6 +67,8 @@
 (smooth-scrolling-mode 1)
 
 (global-set-key (kbd "C-c s e") 'string-edit-at-point)
+(global-set-key (kbd "C-c s s") 'sudo-edit-current-file)
+
 (global-aggressive-indent-mode 1)
 
 ;; ========= Place backup files in specific directory =========
